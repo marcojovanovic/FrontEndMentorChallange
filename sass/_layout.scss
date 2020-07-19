@@ -1,0 +1,288 @@
+
+// first section
+.showcase {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and(max-width:$bp-medium) {
+   flex-direction: column-reverse;
+
+   
+  }
+
+  &-img {
+    display: inline-block;
+    width: 50%;
+    border-style: none;
+    cursor: pointer;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+        width: 100%;
+     
+    }
+  }
+
+  &-info {
+    width: 46%;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      width: 100%;
+   
+  }
+  }
+
+  &-signUp {
+    display: flex;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      flex-direction: column;
+   
+  }
+  }
+
+  &-title {
+    font-size: 4rem;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+     text-align: center;
+   
+  }
+
+  }
+
+  &-text {
+    font-size: 2rem;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+     text-align: center;
+   
+  }
+    
+  }
+
+  &-email {
+    font-size: 2rem !important;
+    width: 55% !important;
+    font-family: inherit;
+    color:$grayish;
+
+    &::placeholder{
+
+      color:$grayish;
+
+    }
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      width: 80% !important;
+      margin: auto;
+   
+  }
+  }
+
+  &-btn {
+    transform: translateX(20px);
+    background: $btnBlue;
+    color: white;
+    padding: 0.1rem 1.3rem;
+    width: 30%;
+    border: none;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+    font-size: 1.2rem;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      width: 80% !important;
+      margin:2rem auto;
+      transform: translateX(0);
+      padding: 0.5rem 1.3rem;
+
+   
+  }
+  }
+}
+
+
+// second section
+
+
+.productive {
+  background: url('../img/bg-curve-desktop.svg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 12%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+
+  &-btn {
+    background: transparent;
+    box-shadow: none;
+    color: $cyan;
+    letter-spacing: 1px;
+    transform: translateX(-14px);
+
+    font-size: 1.9rem;
+    width: 80%;
+    display: flex;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      margin:2rem auto;
+      display: block;
+      text-align: center;
+      transform: translateX(0);
+    
+   
+  }
+
+
+  }
+
+  &-img {
+    width: 2rem;
+    display: flex;
+    align-self: center;
+    margin-left: 0.5rem;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      margin: auto;
+      display: inline;
+   
+  }
+
+    &--avatar {
+      width: 5rem;
+      border-radius: 50%;
+     
+    }
+  }
+
+  &-underline {
+    width: 33%;
+    height: 2px;
+    background: $cyan;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+       margin: auto;
+    
+   }
+  }
+
+  &-box {
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    background: white;
+    border-radius: 10px;
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      width: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+   
+  }
+  }
+
+  &-flex {
+    display: flex;
+
+    align-items: center;
+
+    & > div{
+      margin-left: 1rem;
+    }
+  }
+}
+
+// thrid section
+
+.started{
+  background: $started;
+  padding: 9rem;
+  color:white;
+
+  &-1{
+    width: 51%;
+
+    h2{
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    p{
+      font-size: 2rem;
+    }
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      width: 80%;
+      margin: auto;
+      text-align: center;
+     
+   
+  }
+  }
+
+  &-2{
+    width: 50%;
+    margin-left: 20%;
+   
+  }
+
+  &-email{
+      width: 85% !important;
+      padding: 1.2rem !important;
+      outline: none;
+      border-radius: 5px;
+
+      @media only screen and(max-width:$bp-medium) {
+      
+        margin: 4rem auto;
+        width: 120% !important;
+     
+    }
+
+  }
+
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      flex-direction: column;
+   
+  }
+  }
+
+  &-btn{
+    margin-top: 4rem;
+    padding: 1rem;
+    width: 40%;
+    transform: translateX(0);
+
+    @media only screen and(max-width:$bp-medium) {
+      
+      margin: auto;
+      width: 120% !important;
+      padding: 1.3rem;
+   
+  }
+  }
+}
+
+
+
+

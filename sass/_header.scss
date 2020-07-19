@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: space-between;
+  padding-left: 13.5%;
+  padding-right: 13.5%;
+  margin-bottom: 2rem;
+
+  @media only screen and(max-width:$bp-medium) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  &-img {
+    max-width: 13rem;
+    object-fit: cover;
+    flex: 1;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+
+    &--item {
+      margin-left: 5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
